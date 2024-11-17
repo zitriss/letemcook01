@@ -20,8 +20,16 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"character-test1": "res://addons/dialogic/Test/Characters/character-test1.dch",
+"character-test2": "res://addons/dialogic/Test/Characters/character-test2.dch"
+}
+directories/dtl_directory={
+"timeline-test1": "res://addons/dialogic/Test/Timelines/timeline-test1.dtl"
+}
+variables={
+"test1variable": 0.0
+}
 
 [editor_plugins]
 

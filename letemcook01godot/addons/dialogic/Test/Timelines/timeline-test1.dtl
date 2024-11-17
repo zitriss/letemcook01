@@ -1,0 +1,19 @@
+[background arg="res://addons/dialogic/Test/Assets/backgrounds/rpg_box.webp" fade="0.0"]
+join character-test1 center
+character-test1: Oui 1
+update character-test1 right [move_time="1.0"]
+join character-test2 left
+character-test2: oui 2
+- choix1
+	character-test1: choix 1
+- choix2
+	character-test2: choix 2
+	set {test1variable} = 1
+[wait_input]
+ok
+[wait time="1.0"]
+if {test1variable} == 1:
+	character-test1: gvcgxvhczhjvxcjnk
+else:
+	character-test1 ( hate): .....
+[wait time="3.0"]
