@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.nlaha.godotmidi"
+type="MidiResource"
+uid="uid://bwk6t11415q6n"
+path="res://.godot/imported/zeal.mid-bc5a9922681e10dc9c7aab6f3b600272.res"
+
+[deps]
+
+source_file="res://assets/audio/zeal/zeal.mid"
+dest_files=["res://.godot/imported/zeal.mid-bc5a9922681e10dc9c7aab6f3b600272.res"]
+
+[params]
+

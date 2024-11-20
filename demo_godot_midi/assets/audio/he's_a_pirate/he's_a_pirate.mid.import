@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.nlaha.godotmidi"
+type="MidiResource"
+uid="uid://0uylh5kdjrr"
+path="res://.godot/imported/he's_a_pirate.mid-299ce3ef1757497f91df5c471736a711.res"
+
+[deps]
+
+source_file="res://assets/audio/he's_a_pirate/he's_a_pirate.mid"
+dest_files=["res://.godot/imported/he's_a_pirate.mid-299ce3ef1757497f91df5c471736a711.res"]
+
+[params]
+

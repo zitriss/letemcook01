@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.nlaha.godotmidi"
+type="MidiResource"
+uid="uid://b7orc63h2n67b"
+path="res://.godot/imported/mii_channel.mid-1ac2518049df998d338d8fd00fc05bea.res"
+
+[deps]
+
+source_file="res://assets/audio/mii_channel/mii_channel.mid"
+dest_files=["res://.godot/imported/mii_channel.mid-1ac2518049df998d338d8fd00fc05bea.res"]
+
+[params]
+
