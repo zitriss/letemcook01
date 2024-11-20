@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.nlaha.godotmidi"
+type="MidiResource"
+uid="uid://cj6njyu1nd8nj"
+path="res://.godot/imported/gamme_test.mid-405a6dc9f9da381501c8918ee2f75661.res"
+
+[deps]
+
+source_file="res://gamme_test.mid"
+dest_files=["res://.godot/imported/gamme_test.mid-405a6dc9f9da381501c8918ee2f75661.res"]
+
+[params]
+
