@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" path="res://music_vis.gd" id="1_7bol8"]
 [ext_resource type="Shader" path="res://note_vis_shader.gdshader" id="2_uwn88"]
-[ext_resource type="AudioStream" uid="uid://c2p2hlfeyvhsk" path="res://assets/audio/mii_channel/mii_channel.ogg" id="4_ufdn0"]
+[ext_resource type="MidiResource" uid="uid://bwk6t11415q6n" path="res://assets/audio/zeal/zeal.mid" id="3_sf23l"]
+[ext_resource type="AudioStream" uid="uid://bib56neltjbos" path="res://assets/audio/zeal/zeal.ogg" id="4_ahfb6"]
 [ext_resource type="AudioStream" uid="uid://btbw2a07sdp51" path="res://assets/audio/melee.wav" id="5_gkc6h"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2soq2"]
@@ -45,60 +46,6 @@ render_priority = 0
 shader = ExtResource("2_uwn88")
 shader_parameter/color = Color(0.639216, 0.619608, 0.611765, 1)
 
-[sub_resource type="MidiResource" id="MidiResource_n6gh6"]
-format = 1
-track_count = 1
-division = 480
-tempo = 500000
-tracks = [{
-"events": [{
-"channel": 0,
-"data": "Piano",
-"delta": 0.0,
-"subtype": 3,
-"track": 0,
-"type": "meta"
-}, {
-"channel": 0,
-"data": {
-"clocks_per_tick": 24,
-"denominato": 4,
-"num_32nd_notes_per_quarter": 8,
-"numerator": 4
-},
-"delta": 0.0,
-"subtype": 88,
-"track": 0,
-"type": "meta"
-}, {
-"channel": 0,
-"data": {
-"major_minor": 0,
-"sharps_flats": 0
-},
-"delta": 0.0,
-"subtype": 89,
-"track": 0,
-"type": "meta"
-}, {
-"channel": 0,
-"data": 500000,
-"delta": 0.0,
-"subtype": 81,
-"track": 0,
-"type": "meta"
-}, {
-"channel": 0,
-"data": 0,
-"delta": 0.0,
-"note": 121,
-"subtype": 11,
-"track": 0,
-"type": "note"
-}],
-"name": "Piano"
-}]
-
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_qbs84"]
 
 [sub_resource type="Sky" id="Sky_t5vpa"]
@@ -131,7 +78,7 @@ script = ExtResource("1_7bol8")
 note_materials = Array[Material]([SubResource("ShaderMaterial_2soq2"), SubResource("ShaderMaterial_33vtw"), SubResource("ShaderMaterial_jh5ke"), SubResource("ShaderMaterial_4arlw"), SubResource("ShaderMaterial_wg5fx"), SubResource("ShaderMaterial_gw6ig"), SubResource("ShaderMaterial_utwia"), SubResource("ShaderMaterial_grq4g")])
 
 [node name="MidiPlayer" type="MidiPlayer" parent="."]
-midi = SubResource("MidiResource_n6gh6")
+midi = ExtResource("3_sf23l")
 loop = true
 process_mode = 3
 
@@ -149,7 +96,7 @@ size = Vector3(18, 0.1, 1)
 environment = SubResource("Environment_6map0")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_ufdn0")
+stream = ExtResource("4_ahfb6")
 volume_db = -10.0
 autoplay = true
 
