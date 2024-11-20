@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://cbj7nfk0sbt34"]
 
-[ext_resource type="Script" path="res://node.gd" id="1_r5rij"]
+[ext_resource type="Script" path="res://test_midi.gd" id="1_r5rij"]
 [ext_resource type="MidiResource" uid="uid://cj6njyu1nd8nj" path="res://gamme_test.mid" id="2_clxh7"]
 [ext_resource type="AudioStream" uid="uid://dh4a0fqo0cpwi" path="res://gamme_test.wav" id="3_15wj3"]
 
-[node name="Node" type="Node"]
+[node name="TestMidi" type="Node"]
 script = ExtResource("1_r5rij")
 
 [node name="MidiPlayer" type="MidiPlayer" parent="."]

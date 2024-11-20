@@ -1,11 +1,12 @@
 extends Node
 
 var midi_player
+var n = 0
 
 func _ready():
 	midi_player = $MidiPlayer
 	
-	midi_player.loop = true
+	midi_player.loop = false
 	midi_player.note.connect(my_note_callback)
 
 	  # link the AudioStreamPlayer in your scene
@@ -18,9 +19,11 @@ func _ready():
 	midi_player.play()
 
 func my_note_callback(event, track):
+	n += 1
 	if (event['subtype'] == MIDI_MESSAGE_NOTE_ON): # note on
 		pass
 	elif (event['subtype'] == MIDI_MESSAGE_NOTE_OFF): # note off
 		pass
-
-	print("[Track: " + str(track) + "] Note played: " + str(event['note']))
+	
+	print(event)
+	print(n)
