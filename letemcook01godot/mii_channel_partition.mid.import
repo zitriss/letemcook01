@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.nlaha.godotmidi"
+type="MidiResource"
+uid="uid://w575ts1582ad"
+path="res://.godot/imported/mii_channel_partition.mid-efcb47cb68ccad82f661196b9e481bcd.res"
+
+[deps]
+
+source_file="res://mii_channel_partition.mid"
+dest_files=["res://.godot/imported/mii_channel_partition.mid-efcb47cb68ccad82f661196b9e481bcd.res"]
+
+[params]
+
