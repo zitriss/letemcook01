@@ -24,6 +24,7 @@ func _process(delta):
 	# spawn notes
 	for note in notes_on:
 		# spawn a cube
+		# Le cube a sa position définie par la note et sa couleur définie par sa track
 		var box = MeshInstance3D.new()
 		box.mesh = BoxMesh.new()
 		box.scale = Vector3(0.1, 0.05, 0.1)
@@ -42,9 +43,10 @@ func _process(delta):
 
 # Called when a "note" type event is played
 func on_note(event, track):
+	print(event)
 	if (event['subtype'] == MIDI_MESSAGE_NOTE_ON): # note on
 		notes_on[event['note']] = track
-		print(event)
+		#print(event)
 		#$SFX.play()
 	elif (event['subtype'] == MIDI_MESSAGE_NOTE_OFF): # note off
 		notes_on.erase(event['note'])
