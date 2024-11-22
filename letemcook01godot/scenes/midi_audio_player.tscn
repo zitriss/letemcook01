@@ -6,5 +6,6 @@
 script = ExtResource("1_oshx4")
 
 [node name="MidiPlayer" type="MidiPlayer" parent="."]
+loop = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
