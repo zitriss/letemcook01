@@ -30,6 +30,9 @@ directories/dtl_directory={
 variables={
 "test1variable": 0.0
 }
+glossary/default_case_sensitive=true
+layout/style_list=[]
+layout/default_style="Default"
 
 [editor_plugins]
 
