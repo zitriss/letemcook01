@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/main_test.gd" id="1_ad11j"]
 [ext_resource type="PackedScene" uid="uid://cbj7nfk0sbt34" path="res://scenes/midi_audio_player.tscn" id="2_tf4u1"]
 [ext_resource type="AudioStream" uid="uid://bx4g573bberdf" path="res://assets/audio/audiostream/mii_channel.ogg" id="3_n5ixj"]
-[ext_resource type="MidiResource" uid="uid://tjkmj5be6kd4" path="res://assets/audio/midi/mii_channel_partition.mid" id="4_3m8pq"]
+[ext_resource type="MidiResource" uid="uid://w575ts1582ad" path="res://assets/audio/midi/mii_channel_partition.mid" id="4_3m8pq"]
 [ext_resource type="Script" path="res://scripts/midi_audio_player_resource.gd" id="5_rdxgm"]
 
 [sub_resource type="Resource" id="Resource_feskc"]
