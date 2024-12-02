@@ -1,0 +1,124 @@
+[gd_scene load_steps=14 format=3 uid="uid://3d7v5ybbr2ci"]
+
+[ext_resource type="Script" path="res://scripts/buttons.gd" id="1_4al84"]
+[ext_resource type="Texture2D" uid="uid://2rcgja7jbkht" path="res://assets/sprites/MV Icons Letter Buttons - ALL.png" id="1_5r354"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tgiu1"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 640, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srsr5"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 160, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bxn6"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 928, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1n6bf"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 448, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mxcg"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 544, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s544v"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pi0dm"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 736, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etumt"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 256, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2exd"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 832, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1i2vd"]
+atlas = ExtResource("1_5r354")
+region = Rect2(320, 352, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y4krn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tgiu1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srsr5")
+}],
+"loop": false,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bxn6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1n6bf")
+}],
+"loop": false,
+"name": &"green",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mxcg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s544v")
+}],
+"loop": true,
+"name": &"grey",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pi0dm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etumt")
+}],
+"loop": false,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t2exd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1i2vd")
+}],
+"loop": false,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[node name="Buttons" type="Node2D"]
+script = ExtResource("1_4al84")
+
+[node name="Button1" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_y4krn")
+animation = &"red"
+
+[node name="Button2" type="AnimatedSprite2D" parent="."]
+position = Vector2(32, 0)
+sprite_frames = SubResource("SpriteFrames_y4krn")
+animation = &"green"
+
+[node name="Button3" type="AnimatedSprite2D" parent="."]
+position = Vector2(64, 0)
+sprite_frames = SubResource("SpriteFrames_y4krn")
+animation = &"blue"
+
+[node name="Button4" type="AnimatedSprite2D" parent="."]
+position = Vector2(96, 0)
+sprite_frames = SubResource("SpriteFrames_y4krn")
+animation = &"yellow"

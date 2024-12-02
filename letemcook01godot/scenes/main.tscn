@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfx815i7vagc2"]
+[gd_scene load_steps=4 format=3 uid="uid://dfx815i7vagc2"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_ywr4u"]
 [ext_resource type="MidiResource" uid="uid://ci70g24desmf3" path="res://assets/midi/mii_channel_partition.mid" id="2_sfcsw"]
+[ext_resource type="PackedScene" uid="uid://3d7v5ybbr2ci" path="res://scenes/buttons.tscn" id="3_dupvb"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_ywr4u")
 
 [node name="MidiPlayer" type="MidiPlayer" parent="."]
 midi = ExtResource("2_sfcsw")
+
+[node name="Buttons" parent="." instance=ExtResource("3_dupvb")]
+position = Vector2(355, 324)
+scale = Vector2(5, 5)
 
 [connection signal="note" from="MidiPlayer" to="." method="_on_midi_player_note"]
